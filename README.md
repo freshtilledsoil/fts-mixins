@@ -14,6 +14,64 @@ Or include the full library by placing the folder in your Sass directory, and th
 ```
 
 
+## Contribute
+
+To download and contribute to the repo...
+
+* Clone the repo:  
+  ```
+  // change the current working directory to the location
+  // of where you want to clone the repository to
+  $ cd YOUR-DIRECTORY
+
+  // clone the repo
+  $ git clone https://github.com/freshtilledsoil/fts-mixins.git
+  ``` 
+* Create a new branch and add your new mixin file
+
+* When creating your mixin, please adhere to the following template:
+
+  ```css
+  /** --------------------------------------------------------------------
+
+    Title of mixin
+
+    add a short description / source attribution here
+
+  --------------------------------------------------------------------- */
+
+  @mixin unique-name ( $vars ) {
+
+    // mix it up!
+
+  }
+
+
+  /**
+
+    Example Usage:
+    -----------------------------------------------------------
+
+    // include a Sass example
+
+    .example-class {
+      @include unique-name ( # );
+    }
+
+    // and a markup example, if it requires 
+    // a specific markup pattern.
+
+    <div class="example-class">
+      <div class="example-class__child">
+        ...
+      </div>
+    </div>
+
+  */
+  ```
+
+* Push your changes and submit a pull request! :)
+
 
 ### Credits & license
 
