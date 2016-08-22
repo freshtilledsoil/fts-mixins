@@ -19,3 +19,4 @@ Or include the full library by placing the folder in your Sass directory, and th
 
 Please see the inline comments within a mixin file for any links to the original source author.
 
+Available for use under the [MIT License](https://github.com/freshtilledsoil/fts-mixins/blob/master/LICENSE).
