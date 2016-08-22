@@ -1,0 +1,31 @@
+/** --------------------------------------------------------------------
+
+  Cross Browser Inline Block Fix ( * = IE6 & IE7 )
+
+--------------------------------------------------------------------- */
+
+@mixin inline-block ( $vertical-align: baseline ) {
+  display: inline-block;
+  vertical-align: $vertical-align;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+}
+
+
+/**
+
+  Example Usage:
+  -----------------------------------------------------------
+
+  .inline-block {
+    @include inline-block;
+  }
+
+  // or
+
+  .inline-block--va-mid {
+    @include inline-block ( middle );
+  }
+
+*/

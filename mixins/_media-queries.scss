@@ -1,0 +1,47 @@
+/** --------------------------------------------------------------------
+
+  Media Queries
+
+--------------------------------------------------------------------- */
+
+@mixin mq-min-width ( $width ) {
+  @media screen and ( min-width: $width ) {
+    @content;
+  }
+}
+
+@mixin mq-max-width ( $width ) {
+  @media screen and ( max-width: $width ) {
+    @content;
+  }
+}
+
+@mixin mq-min-height ( $height ) {
+  @media screen and ( min-height: $height ) {
+    @content;
+  }
+}
+
+@mixin mq-max-height ( $height ) {
+  @media screen and ( max-height: $height ) {
+    @content;
+  }
+}
+
+
+/**
+
+  Example Usage:
+  -----------------------------------------------------------
+
+  .example {
+    @include mq-max-width ( 20em ) {
+      background: #f00;
+    }
+
+    @include mq-min-width ( 20em ) {
+      background: #f00;
+    }
+  }
+
+*/

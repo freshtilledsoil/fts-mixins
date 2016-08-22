@@ -1,0 +1,11 @@
+{
+  "name": "fts-mixins",
+  "version": "0.1.0",
+  "author": "Fresh Tilled Soil",
+  "description": "Collection of various Sass mixins Fresh Tilled Soil has used on projects.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:freshtilledsoil/fts-mixins.git"
+  },
+  "license": "MIT"
+}

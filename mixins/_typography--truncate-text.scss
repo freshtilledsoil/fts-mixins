@@ -1,0 +1,25 @@
+/** --------------------------------------------------------------------
+
+  Text Truncation
+
+  All the rules needed for the text truncate, with the variable
+  setting the max width of a text-truncating element
+
+--------------------------------------------------------------------- */
+
+@mixin truncate-text( $truncation-boundary ) {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: $truncation-boundary;
+}
+
+/**
+
+  Example Usage:
+  -----------------------------------------------------------
+
+  @include truncate-text(100%);
+
+*/

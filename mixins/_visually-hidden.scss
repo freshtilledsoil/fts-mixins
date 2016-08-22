@@ -1,0 +1,30 @@
+/** --------------------------------------------------------------------
+
+  Visually Hidden
+
+  Set an element to be accessible by screen readers, but visually hidden.
+
+--------------------------------------------------------------------- */
+
+@mixin visually-hidden () {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+
+
+/**
+
+  Example Usage:
+  -----------------------------------------------------------
+
+  .sr-only {
+    @include visually-hidden;
+  }
+
+*/

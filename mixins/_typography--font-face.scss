@@ -1,0 +1,27 @@
+/** --------------------------------------------------------------------
+
+  Declaring Fonts w/ Font-Face
+
+--------------------------------------------------------------------- */
+
+@mixin font-face ( $family, $file-path, $weight: normal, $style: normal ) {
+  @font-face {
+    font-family: $family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype'),
+           url('#{$file-path}.svg##{$family}') format('svg');
+     font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+/**
+
+  Example Usage:
+  -----------------------------------------------------------
+
+  @include font-face( Open Sans, assets/fonts/file-name );
+
+*/
