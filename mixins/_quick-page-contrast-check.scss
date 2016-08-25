@@ -1,0 +1,26 @@
+/** --------------------------------------------------------------------
+
+  Grayscale Check
+
+  Perform the most basic check to test your document's contrast.
+
+  source: https://twitter.com/jdsteinbach/status/767788107408093184
+
+--------------------------------------------------------------------- */
+
+@mixin grayscaleCheck () {
+  html {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+}
+
+
+/**
+
+  Example Usage:
+  -----------------------------------------------------------
+
+  @include grayscaleCheck ();
+
+*/
