@@ -1,0 +1,23 @@
+/** --------------------------------------------------------------------
+
+  Line Height
+
+  Set a unitless line-height to be converted to rems
+  and if needed, a fallback for older browsers 
+
+--------------------------------------------------------------------- */
+
+@mixin line-height ( $lh: 12, $lh-old: false ) {
+  @if ( $lh-old == true ) {
+    line-height: $lh + px; // fallback for old browsers
+  }
+  line-height: ( 0.125 * $lh ) + rem;
+}
+
+/**
+  Example Usage:
+  -----------------------------------------------------------
+  .example {
+    @include line-height ( 16 );
+  }
+*/
