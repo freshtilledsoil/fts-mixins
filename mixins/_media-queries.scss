@@ -4,6 +4,7 @@
 
 --------------------------------------------------------------------- */
 
+// Width
 @mixin mq-min-width ( $width ) {
   @media screen and ( min-width: $width ) {
     @content;
@@ -16,6 +17,13 @@
   }
 }
 
+@mixin mq-min-max-width ( $min, $max ) {
+  @media screen and ( min-width: $min ) and ( max-width: $max ) {
+    @content;
+  }
+}
+
+// Height
 @mixin mq-min-height ( $height ) {
   @media screen and ( min-height: $height ) {
     @content;
@@ -24,6 +32,12 @@
 
 @mixin mq-max-height ( $height ) {
   @media screen and ( max-height: $height ) {
+    @content;
+  }
+}
+
+@mixin mq-min-max-height ( $min, $max ) {
+  @media screen and ( min-height: $min ) and ( max-height: $max ) {
     @content;
   }
 }
